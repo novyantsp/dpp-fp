@@ -14,7 +14,7 @@
                             <li class="breadcrumb-item"><a class="text-blue" href="{{ url('/') }}"><i
                                         class="fas fa-home"></i></a></li>
                             <li class="breadcrumb-item"><a class="text-blue"
-                                    href="{{ route('pasien.daftar-pasien.show') }}">Daftar Pasien</a>
+                                    href="">Daftar Pasien</a>
                             </li>
                         </ol>
                     </nav>

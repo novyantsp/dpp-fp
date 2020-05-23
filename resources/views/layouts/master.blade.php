@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>
-        @yield('title', 'Covid-19 Admin Dashboard')
+        @yield('title', 'Final Project DPP')
     </title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ url('assets/img/icons/logo.png') }}" type="image/png">
@@ -51,15 +51,6 @@
                     <!-- Nav items -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/dashboard') }}">
-                                <i class="ni ni-chart-bar-32 text-primary"></i>
-                                <span class="nav-link-text">Dashboard</span>
-                            </a>
-                        </li>
-                        @if($userOps->getUserGroup() == \App\Utilities\Constants::USER_GROUP_PEMANTAU_DINKES ||
-                        $userOps->getUserGroup() == \App\Utilities\Constants::USER_GROUP_ADMIN || $userOps->getUserId() == null)
-
-                        <li class="nav-item">
                             <a class="nav-link" href="#navbar-data" data-toggle="collapse" role="button"
                                 aria-expanded="false" aria-controls="navbar-data">
                                 <i class="ni ni-single-copy-04 text-primary"></i>
@@ -74,73 +65,9 @@
                                         <a href="{{ route('pasien.daftar-pasien.show') }}" class="nav-link">Daftar
                                             Pasien</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a href="{{ route('pasien.daftar-otg.show') }}" class="nav-link">Daftar
-                                            OTG/KE</a>
-                                    </li>
                                 </ul>
                             </div>
                         </li>
-                        @endif
-                        @if($userOps->getUserGroup() == \App\Utilities\Constants::USER_GROUP_KOMINFO ||
-                        $userOps->getUserGroup() == \App\Utilities\Constants::USER_GROUP_ADMIN || $userOps->getUserId() == null)
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#navbar-sebaran" data-toggle="collapse" role="button"
-                                aria-expanded="false" aria-controls="navbar-data">
-                                <i class="ni ni-map-big text-primary"></i>
-                                <span class="nav-link-text">Diagram Sebaran</span>
-                            </a>
-                            <div class="collapse" id="navbar-sebaran">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="{{ url('/peta-sebaran') }}" class="nav-link">Peta Sebaran</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="{{ route('peta-sebaran.network-diagram.show') }}" class="nav-link">Network Diagram</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        @endif
-                        @if($userOps->getUserGroup() != \App\Utilities\Constants::USER_GROUP_PEMANTAU_DINKES || $userOps->getUserId() == null)
-                        <li class="nav-item">
-                            <a class="nav-link" href="#navbar-data-1" data-toggle="collapse" role="button"
-                                aria-expanded="false" aria-controls="navbar-data">
-                                <i class="ni ni-compass-04 text-primary"></i>
-                                <span class="nav-link-text">Prediksi</span>
-                            </a>
-                            <div class="collapse" id="navbar-data-1">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="{{ route('prediksi.show') }}" class="nav-link">Prediksi</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="{{ route('diagram-covid.show') }}" class="nav-link">Diagram Covid-19</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        @endif
-                        @if($userOps->getUserGroup() == \App\Utilities\Constants::USER_GROUP_ADMIN || $userOps->getUserId() == null)
-                        <li class="nav-item">
-                            <a class="nav-link" href="#navbar-management" data-toggle="collapse" role="button"
-                                aria-expanded="false" aria-controls="navbar-management">
-                                <i class="ni ni-circle-08 text-primary"></i>
-                                <span class="nav-link-text">Admin Management</span>
-                            </a>
-                            <div class="collapse" id="navbar-management">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="{{ route('admin.user.show') }}" class="nav-link">User</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="{{ route('admin.rumah-sakit.show') }}" class="nav-link">Rumah Sakit</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        @endif
                     </ul>
                 </div>
             </div>
@@ -177,7 +104,7 @@
                                     </div>
                                     <div class="media-body ml-2 d-none d-lg-block">
                                         <span
-                                            class="mb-0 text-sm  font-weight-bold">{{ $userOps->getUserName() }}</span>
+                                            class="mb-0 text-sm  font-weight-bold"></span>
                                     </div>
                                 </div>
                             </a>
