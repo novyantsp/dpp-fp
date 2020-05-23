@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\FormAll;
-use App\Form;
-use App\Pasien;
 
 class FormController extends Controller
 {
@@ -16,9 +14,10 @@ class FormController extends Controller
      */
     public function index()
     {
-        $formAll = FormAll::all();
-        // dd($formAll);
-        return view('pages.daftar_pasien', compact('formAll'));
+        // $formAll = FormAll::all();
+        // // dd($formAll);
+        // return view('pages.daftar_pasien', compact('formAll'));
+        return view('welcome');
     }
 
     /**
@@ -104,7 +103,7 @@ class FormController extends Controller
             'lokasi' => $request->get('lokasi'),
             // Extrimitas
             'suhu' => $request->get('suhu'),
-            'edema ' => $request->get('edema'),
+            'edema' => $request->get('edema'),
             'extrimitas_lain_lain' => $request->get('extrimitas_lain_lain'),
 
             'hepar' => $request->get('hepar'),
@@ -112,7 +111,7 @@ class FormController extends Controller
             'lain_lain' => $request->get('lain_lain'),
         ]);
 
-        dd($formAll);
+        // dd($formAll);
         $formAll->save();
         return redirect('/pasien')->with('success', 'Pasien saved!');
     }

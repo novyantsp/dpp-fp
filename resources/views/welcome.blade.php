@@ -130,6 +130,10 @@
                     <label for="city">alamat:</label>
                     <input type="text" class="form-control" name="alamat"/>
                 </div>
+                <div class="form-group">
+                    <label for="city">alamat:</label>
+                    <input type="text" class="form-control" name="rencana_kerja" value="None"/>
+                </div>
                 <button type="submit" class="btn btn-primary-outline">Add contact</button>
 
             </form>
