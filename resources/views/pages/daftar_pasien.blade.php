@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Covid-19 Admin Dashboard - Pasien')
+@section('title', 'Final Project DPP - Pasien')
 
 @section('pageContent')
 <!-- Header -->
@@ -26,7 +26,7 @@
 <!-- Page content -->
 <div class="header pb-6">
     <div class="container-fluid">
-        @component('components.card.card_pasien_list', ['userOps' => $userOps, 'pasiens' => $pasiens, 'pasienCount' => $pasienCount])
+        @component('components.card.card_pasien_list')
         @endcomponent
         <!-- Footer -->
         @component('components.footer')
