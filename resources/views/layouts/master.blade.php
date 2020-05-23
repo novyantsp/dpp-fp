@@ -31,7 +31,7 @@
             <!-- Brand -->
             <div class="sidenav-header d-flex align-items-center">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ url('assets/img/brand/logo.webp') }}" class="navbar-brand-img" alt="logo-jatim">
+                    <img src="" class="navbar-brand-img" alt="">
                 </a>
                 <div class="ml-auto">
                     <!-- Sidenav toggler -->
