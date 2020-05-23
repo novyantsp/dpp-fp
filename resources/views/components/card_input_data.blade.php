@@ -88,7 +88,7 @@
                                     <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
                                 </div>
                                 <input class="form-control datepicker" placeholder="Select date" type="text"
-                                    id="input_tgl_asesmen" name="pasien_tgl_asesmen">
+                                    id="input_tgl_asesmen" name="tgl_asesmen">
                             </div>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                         <div class="form-group">
                             <label class="form-control-label" for="input-keluhan">Keluhan Sekarang</label>
                             <input type="text" id="input-keluhan" class="form-control" placeholder=""
-                                name="pasien_keluhan">
+                                name="keluhan_utama">
                         </div>
                     </div>
                 </div>
@@ -112,14 +112,14 @@
                             <label class="form-control-label" for="input-riwayat-penyakit">Riwayat Penyakit
                                 Sekarang</label>
                             <input type="text" id="input-riwayat-penyakit" class="form-control" placeholder=""
-                                name="pasien_riwayat-penyakit">
+                                name="riwayat_penyakit_sekarang">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-riwayat-pengobatan">Riwayat Pengobatan</label>
                             <input type="text" id="input-riwayat-pengobatan" class="form-control" placeholder=""
-                                name="pasien_riwayat-pengobatan">
+                                name="riwayat_pengobatan">
                         </div>
                     </div>
                 </div>
@@ -132,14 +132,14 @@
                         <div class="form-group">
                             <label class="form-control-label" for="input-anemia">Anemia</label>
                             <input type="text" id="input-anemia" class="form-control" placeholder=""
-                                name="pasien_anemia">
+                                name="anemia">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-ikterus">Ikterus</label>
                             <input type="text" id="input-ikterus" class="form-control" placeholder=""
-                                name="pasien_ikterus">
+                                name="ikterus">
                         </div>
                     </div>
                 </div>
@@ -148,13 +148,13 @@
                         <div class="form-group">
                             <label class="form-control-label" for="input-reflek-pupil">Reflek Pupil</label>
                             <input type="text" id="input-reflek-pupil" class="form-control" placeholder=""
-                                name="pasien_reflek_pupil">
+                                name="reflek_pupil">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-edema">Edema Palprebae</label>
-                            <input type="text" id="input-edema" class="form-control" placeholder="" name="pasien_edema">
+                            <input type="text" id="input-edema" class="form-control" placeholder="" name="edema_palpebrae">
                         </div>
                     </div>
                 </div>
@@ -166,14 +166,14 @@
                         <div class="form-group">
                             <label class="form-control-label" for="input-tonsil">Anemia</label>
                             <input type="text" id="input-tonsil" class="form-control" placeholder=""
-                                name="pasien_tonsil">
+                                name="tonsil">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-faring">Faring</label>
                             <input type="text" id="input-faring" class="form-control" placeholder=""
-                                name="pasien_faring">
+                                name="faring">
                         </div>
                     </div>
                 </div>
@@ -181,13 +181,13 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-lidah">Lidah</label>
-                            <input type="text" id="input-lidah" class="form-control" placeholder="" name="pasien_lidah">
+                            <input type="text" id="input-lidah" class="form-control" placeholder="" name="lidah">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-bibir">Bibir</label>
-                            <input type="text" id="input-bibir" class="form-control" placeholder="" name="pasien_bibir">
+                            <input type="text" id="input-bibir" class="form-control" placeholder="" name="bibir">
                         </div>
                     </div>
                 </div>
@@ -197,22 +197,22 @@
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-tonsil">JVP</label>
-                            <input type="text" id="input-tonsil" class="form-control" placeholder=""
-                                name="pasien_tonsil">
+                            <label class="form-control-label" for="input-jvp">JVP</label>
+                            <input type="text" id="input-jvp" class="form-control" placeholder=""
+                                name="jvp">
                         </div>
                     </div>
                     <div class="col-lg-5">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-faring">Pembesaran Kelenjar</label>
-                            <input type="text" id="input-faring" class="form-control" placeholder=""
-                                name="pasien_faring">
+                            <label class="form-control-label" for="input-pembesaran-kelenjar">Pembesaran Kelenjar</label>
+                            <input type="text" id="input-pembesaran-kelenjar" class="form-control" placeholder=""
+                                name="pembesaran_kelenjar">
                         </div>
                     </div>
                     <div class="col-lg-2">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-lidah">Kaku Kuduk</label>
-                            <input type="text" id="input-lidah" class="form-control" placeholder="" name="pasien_lidah">
+                            <label class="form-control-label" for="input-kaku-kuduk">Kaku Kuduk</label>
+                            <input type="text" id="input-kaku-kuduk" class="form-control" placeholder="" name="kaku_kuduk">
                         </div>
                     </div>
                 </div>
@@ -222,16 +222,16 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-tonsil">Simetris</label>
-                            <input type="text" id="input-tonsil" class="form-control" placeholder=""
-                                name="pasien_tonsil">
+                            <label class="form-control-label" for="input-simetris">Simetris</label>
+                            <input type="text" id="input-simetris" class="form-control" placeholder=""
+                                name="simetris">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-faring">Asimetris</label>
-                            <input type="text" id="input-faring" class="form-control" placeholder=""
-                                name="pasien_faring">
+                            <label class="form-control-label" for="input-asimetris">Asimetris</label>
+                            <input type="text" id="input-asimetris" class="form-control" placeholder=""
+                                name="asimetris">
                         </div>
                     </div>
                 </div>
@@ -241,22 +241,22 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-tonsil">S1/S2</label>
-                            <input type="text" id="input-tonsil" class="form-control" placeholder=""
-                                name="pasien_tonsil">
+                            <label class="form-control-label" for="input-s1_s2">S1/S2</label>
+                            <input type="text" id="input-s1_s2" class="form-control" placeholder=""
+                                name="s1_s2">
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-faring">Murmur</label>
-                            <input type="text" id="input-faring" class="form-control" placeholder=""
-                                name="pasien_faring">
+                            <label class="form-control-label" for="input-murmur">Murmur</label>
+                            <input type="text" id="input-murmur" class="form-control" placeholder=""
+                                name="pmurmur">
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-lidah">Lain-Lain</label>
-                            <input type="text" id="input-lidah" class="form-control" placeholder="" name="pasien_lidah">
+                            <label class="form-control-label" for="input-jantung-lain-lain">Lain-Lain</label>
+                            <input type="text" id="input-jantung-lain-lain" class="form-control" placeholder="" name="jantung_lain_lain">
                         </div>
                     </div>
                 </div>
@@ -266,31 +266,31 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-anemia">Suara Napas</label>
-                            <input type="text" id="input-anemia" class="form-control" placeholder=""
-                                name="pasien_anemia">
+                            <label class="form-control-label" for="input-suara-napas">Suara Napas</label>
+                            <input type="text" id="input-suara-napas" class="form-control" placeholder=""
+                                name="suara_nafas">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-ikterus">Ronki</label>
-                            <input type="text" id="input-ikterus" class="form-control" placeholder=""
-                                name="pasien_ikterus">
+                            <label class="form-control-label" for="input-ronki">Ronki</label>
+                            <input type="text" id="input-ronki" class="form-control" placeholder=""
+                                name="ronki">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-reflek-pupil">Wheezing</label>
-                            <input type="text" id="input-reflek-pupil" class="form-control" placeholder=""
-                                name="pasien_reflek_pupil">
+                            <label class="form-control-label" for="input-wheezing">Wheezing</label>
+                            <input type="text" id="input-wheezing" class="form-control" placeholder=""
+                                name="wheezing">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-edema">Lain-Lain</label>
-                            <input type="text" id="input-edema" class="form-control" placeholder="" name="pasien_edema">
+                            <label class="form-control-label" for="input-paru-lain-lain">Lain-Lain</label>
+                            <input type="text" id="input-paru-lain-lain" class="form-control" placeholder="" name="paru_lain_lain">
                         </div>
                     </div>
                 </div>
@@ -300,69 +300,69 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-anemia">Distensi</label>
-                            <input type="text" id="input-anemia" class="form-control" placeholder=""
-                                name="pasien_anemia">
+                            <label class="form-control-label" for="input-distensi">Distensi</label>
+                            <input type="text" id="input-distensi" class="form-control" placeholder=""
+                                name="distensi">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-ikterus">Meteorismus</label>
-                            <input type="text" id="input-ikterus" class="form-control" placeholder=""
-                                name="pasien_ikterus">
+                            <label class="form-control-label" for="input-meteorismus">Meteorismus</label>
+                            <input type="text" id="input-meteorismus" class="form-control" placeholder=""
+                                name="meteorismus">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-reflek-pupil">Peristaltik</label>
-                            <input type="checkbox" id="input-reflek-pupil" class="form-control" placeholder=""
-                                name="pasien_reflek_pupil">
+                            <label class="form-control-label" for="input-peristaltic">Peristaltik</label>
+                            <input type="checkbox" id="input-peristaltic" class="form-control" placeholder=""
+                                name="peristaltic">
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-edema">Normal</label>
-                            <input type="checkbox" id="input-edema" class="form-control" placeholder=""
-                                name="pasien_edema">
+                            <label class="form-control-label" for="input-normal">Normal</label>
+                            <input type="checkbox" id="input-normal" class="form-control" placeholder=""
+                                name="normal">
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-edema">Meningkat</label>
-                            <input type="checkbox" id="input-edema" class="form-control" placeholder=""
-                                name="pasien_edema">
+                            <label class="form-control-label" for="input-meningkat">Meningkat</label>
+                            <input type="checkbox" id="input-meningkat" class="form-control" placeholder=""
+                                name="meningkat">
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-edema">Menurun</label>
-                            <input type="checkbox" id="input-edema" class="form-control" placeholder=""
-                                name="pasien_edema">
+                            <label class="form-control-label" for="input-menurun">Menurun</label>
+                            <input type="checkbox" id="input-menurun" class="form-control" placeholder=""
+                                name="menurun">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-anemia">Ascites</label>
-                            <input type="text" id="input-anemia" class="form-control" placeholder=""
-                                name="pasien_anemia">
+                            <label class="form-control-label" for="input-asciles">Ascites</label>
+                            <input type="text" id="input-asciles" class="form-control" placeholder=""
+                                name="asciles">
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-ikterus">Nyeri Tekan</label>
-                            <input type="text" id="input-ikterus" class="form-control" placeholder=""
-                                name="pasien_ikterus">
+                            <label class="form-control-label" for="input-nyeri-tekan">Nyeri Tekan</label>
+                            <input type="text" id="input-nyeri-tekan" class="form-control" placeholder=""
+                                name="nyeri_tekan">
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-ikterus">Lokasi</label>
-                            <input type="text" id="input-ikterus" class="form-control" placeholder=""
-                                name="pasien_ikterus">
+                            <label class="form-control-label" for="input-lokasi">Lokasi</label>
+                            <input type="text" id="input-lokasi" class="form-control" placeholder=""
+                                name="lokasi">
                         </div>
                     </div>
                 </div>
@@ -371,43 +371,43 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-anemia">Hepar</label>
-                            <input type="text" id="input-anemia" class="form-control" placeholder=""
-                                name="pasien_anemia">
+                            <label class="form-control-label" for="input-hepar">Hepar</label>
+                            <input type="text" id="input-hepar" class="form-control" placeholder=""
+                                name="hepar">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-reflek-pupil">Lien</label>
-                            <input type="text" id="input-reflek-pupil" class="form-control" placeholder=""
-                                name="pasien_reflek_pupil">
+                            <label class="form-control-label" for="input-lien">Lien</label>
+                            <input type="text" id="input-lien" class="form-control" placeholder=""
+                                name="lien">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-reflek-pupil">Lain-Lain</label>
-                            <input type="text" id="input-reflek-pupil" class="form-control" placeholder=""
-                                name="pasien_reflek_pupil">
+                            <label class="form-control-label" for="input-lain-lain">Lain-Lain</label>
+                            <input type="text" id="input-lain-lain" class="form-control" placeholder=""
+                                name="lain_lain">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-reflek-pupil">Extremitas</label>
-                            <input type="text" id="input-reflek-pupil" class="form-control" placeholder=""
-                                name="pasien_reflek_pupil">
+                            <label class="form-control-label" for="input-suhu">Extremitas</label>
+                            <input type="text" id="input-suhu" class="form-control" placeholder=""
+                                name="suhu">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-reflek-pupil">Edema</label>
-                            <input type="text" id="input-reflek-pupil" class="form-control" placeholder=""
-                                name="pasien_reflek_pupil">
+                            <label class="form-control-label" for="input-edema">Edema</label>
+                            <input type="text" id="input-edema" class="form-control" placeholder=""
+                                name="edema">
                         </div>
                     </div>
                 </div>
@@ -423,50 +423,50 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label for="rencana-kerja">Hasil Pemeriksaan Penunjang</label>
-                            <textarea class="form-control" id="rencana-kerja" rows="3"></textarea>
+                            <label for="hasil-pemeriksaan-penunjang">Hasil Pemeriksaan Penunjang</label>
+                            <textarea class="form-control" id="hasil-pemeriksaan-penunjang" rows="3"></textarea>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label for="rencana-kerja">Diagnosis</label>
-                            <textarea class="form-control" id="rencana-kerja" rows="3"></textarea>
+                            <label for="diagnosis">Diagnosis</label>
+                            <textarea class="form-control" id="diagnosis" rows="3"></textarea>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label for="rencana-kerja">Terapi</label>
-                            <textarea class="form-control" id="rencana-kerja" rows="3"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label for="rencana-kerja">Hasil Pembedahan</label>
-                            <textarea class="form-control" id="rencana-kerja" rows="3"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label for="rencana-kerja">Disposisi</label>
-                            <textarea class="form-control" id="rencana-kerja" rows="3"></textarea>
+                            <label for="terapi">Terapi</label>
+                            <textarea class="form-control" id="terapi" rows="3"></textarea>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label for="rencana-kerja">Rekomendasi</label>
-                            <textarea class="form-control" id="rencana-kerja" rows="3"></textarea>
+                            <label for="hasil-pembedahan">Hasil Pembedahan</label>
+                            <textarea class="form-control" id="hasil-pembedahan" rows="3"></textarea>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
-                            <label for="rencana-kerja">Catatan Penting</label>
-                            <textarea class="form-control" id="rencana-kerja" rows="3"></textarea>
+                            <label for="disposisi">Disposisi</label>
+                            <textarea class="form-control" id="disposisi" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="rekomendasi">Rekomendasi</label>
+                            <textarea class="form-control" id="rekomendasi" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="catatan-penting">Catatan Penting</label>
+                            <textarea class="form-control" id="catatan-penting" rows="3"></textarea>
                         </div>
                     </div>
                 </div>
