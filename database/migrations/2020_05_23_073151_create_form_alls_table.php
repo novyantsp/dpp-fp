@@ -53,7 +53,7 @@ class CreateFormAllsTable extends Migration
             $table->enum('kaku_kuduk', ['0', '1', 'none'])->nullable()->default('0');
             // Jantung
             $table->string('s1_s2')->nullable()->default('none');
-            $table->binary('reguler')->nullable()->default('0');
+            $table->enum('reguler', ['0', '1', 'none'])->nullable()->default('0');
             $table->string('murmur')->nullable()->default('none');
             $table->string('jantung_lain_lain')->nullable()->default('none');
             // Paru
