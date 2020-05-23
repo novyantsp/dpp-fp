@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLeherTable extends Migration
+class CreateAnamnesesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateLeherTable extends Migration
      */
     public function up()
     {
-        Schema::create('leher', function (Blueprint $table) {
+        Schema::create('anamneses', function (Blueprint $table) {
             $table->id();
-            $table->string('jvp')->default('none');
-            $table->string('pembesaran-kelenjar')->default('none');
-            $table->binary('kaku-kuduk')->default('0');
+            $table->string('keluhan-utama')->default('none');
+            $table->string('riwayat-penyakit-sekarang')->default('none');
+            $table->string('riwayat-pengobatan')->default('none');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateLeherTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('leher');
+        Schema::dropIfExists('anamneses');
     }
 }

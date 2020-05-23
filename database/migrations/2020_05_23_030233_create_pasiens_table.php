@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTorakTable extends Migration
+class CreatePasiensTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateTorakTable extends Migration
      */
     public function up()
     {
-        Schema::create('torak', function (Blueprint $table) {
+        Schema::create('pasiens', function (Blueprint $table) {
             $table->id();
-            $table->binary('simetris-asimetris')->default('0');
-            $table->string('keterangan')->default('none');
+            $table->string('nama');
+            $table->binary('sex');
+            $table->date('birth');
+            $table->string('alamat');
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ class CreateTorakTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('torak');
+        Schema::dropIfExists('pasiens');
     }
 }

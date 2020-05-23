@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMataTable extends Migration
+class CreateParusTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateMataTable extends Migration
      */
     public function up()
     {
-        Schema::create('mata', function (Blueprint $table) {
+        Schema::create('parus', function (Blueprint $table) {
             $table->id();
-            $table->string('anemia')->default('none');
-            $table->string('ikterus')->default('none');
-            $table->string('reflek-pupil')->default('none');
-            $table->string('edema-palpebrae')->default('none');
+            $table->string('suara-nafas')->default('none');
+            $table->string('ronki')->default('none');
+            $table->string('wheezing')->default('none');
+            $table->string('lain-lain')->default('none');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateMataTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mata');
+        Schema::dropIfExists('parus');
     }
 }

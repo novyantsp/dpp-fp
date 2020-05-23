@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateThtTable extends Migration
+class CreateLehersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateThtTable extends Migration
      */
     public function up()
     {
-        Schema::create('tht', function (Blueprint $table) {
+        Schema::create('lehers', function (Blueprint $table) {
             $table->id();
-            $table->string('tonsil')->default('none');
-            $table->string('faring')->default('none');
-            $table->string('lidah')->default('none');
-            $table->string('bibir')->default('none');
+            $table->string('jvp')->default('none');
+            $table->string('pembesaran-kelenjar')->default('none');
+            $table->binary('kaku-kuduk')->default('0');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateThtTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tht');
+        Schema::dropIfExists('lehers');
     }
 }

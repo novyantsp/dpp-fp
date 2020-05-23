@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateJantungTable extends Migration
+class CreateThtsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateJantungTable extends Migration
      */
     public function up()
     {
-        Schema::create('jantung', function (Blueprint $table) {
+        Schema::create('thts', function (Blueprint $table) {
             $table->id();
-            $table->string('s1-s2')->default('none');
-            $table->binary('reguler')->default('0');
-            $table->string('murmur')->default('none');
-            $table->string('lain-lain')->default('none');
+            $table->string('tonsil')->default('none');
+            $table->string('faring')->default('none');
+            $table->string('lidah')->default('none');
+            $table->string('bibir')->default('none');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateJantungTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('jantung');
+        Schema::dropIfExists('thts');
     }
 }

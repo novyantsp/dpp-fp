@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePasienTable extends Migration
+class CreateJantungsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreatePasienTable extends Migration
      */
     public function up()
     {
-        Schema::create('pasien', function (Blueprint $table) {
+        Schema::create('jantungs', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->binary('sex');
-            $table->date('birth');
-            $table->string('alamat');
+            $table->string('s1-s2')->default('none');
+            $table->binary('reguler')->default('0');
+            $table->string('murmur')->default('none');
+            $table->string('lain-lain')->default('none');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreatePasienTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pasien');
+        Schema::dropIfExists('jantungs');
     }
 }
