@@ -131,15 +131,13 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-anemia">Anemia</label>
-                            <input type="text" id="input-anemia" class="form-control" placeholder=""
-                                name="anemia">
+                            <input type="text" id="input-anemia" class="form-control" placeholder="" name="anemia">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-ikterus">Ikterus</label>
-                            <input type="text" id="input-ikterus" class="form-control" placeholder=""
-                                name="ikterus">
+                            <input type="text" id="input-ikterus" class="form-control" placeholder="" name="ikterus">
                         </div>
                     </div>
                 </div>
@@ -154,7 +152,8 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-edema">Edema Palprebae</label>
-                            <input type="text" id="input-edema" class="form-control" placeholder="" name="edema_palpebrae">
+                            <input type="text" id="input-edema" class="form-control" placeholder=""
+                                name="edema_palpebrae">
                         </div>
                     </div>
                 </div>
@@ -165,15 +164,13 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-tonsil">Anemia</label>
-                            <input type="text" id="input-tonsil" class="form-control" placeholder=""
-                                name="tonsil">
+                            <input type="text" id="input-tonsil" class="form-control" placeholder="" name="tonsil">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-faring">Faring</label>
-                            <input type="text" id="input-faring" class="form-control" placeholder=""
-                                name="faring">
+                            <input type="text" id="input-faring" class="form-control" placeholder="" name="faring">
                         </div>
                     </div>
                 </div>
@@ -198,13 +195,13 @@
                     <div class="col-lg-5">
                         <div class="form-group">
                             <label class="form-control-label" for="input-jvp">JVP</label>
-                            <input type="text" id="input-jvp" class="form-control" placeholder=""
-                                name="jvp">
+                            <input type="text" id="input-jvp" class="form-control" placeholder="" name="jvp">
                         </div>
                     </div>
                     <div class="col-lg-5">
                         <div class="form-group">
-                            <label class="form-control-label" for="input-pembesaran-kelenjar">Pembesaran Kelenjar</label>
+                            <label class="form-control-label" for="input-pembesaran-kelenjar">Pembesaran
+                                Kelenjar</label>
                             <input type="text" id="input-pembesaran-kelenjar" class="form-control" placeholder=""
                                 name="pembesaran_kelenjar">
                         </div>
@@ -212,7 +209,8 @@
                     <div class="col-lg-2">
                         <div class="form-group">
                             <label class="form-control-label" for="input-kaku-kuduk">Kaku Kuduk</label>
-                            <input type="text" id="input-kaku-kuduk" class="form-control" placeholder="" name="kaku_kuduk">
+                            <input type="text" id="input-kaku-kuduk" class="form-control" placeholder=""
+                                name="kaku_kuduk">
                         </div>
                     </div>
                 </div>
@@ -223,8 +221,7 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-simetris">Simetris</label>
-                            <input type="text" id="input-simetris" class="form-control" placeholder=""
-                                name="simetris">
+                            <input type="text" id="input-simetris" class="form-control" placeholder="" name="simetris">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -242,21 +239,20 @@
                     <div class="col-lg-4">
                         <div class="form-group">
                             <label class="form-control-label" for="input-s1_s2">S1/S2</label>
-                            <input type="text" id="input-s1_s2" class="form-control" placeholder=""
-                                name="s1_s2">
+                            <input type="text" id="input-s1_s2" class="form-control" placeholder="" name="s1_s2">
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="form-group">
                             <label class="form-control-label" for="input-murmur">Murmur</label>
-                            <input type="text" id="input-murmur" class="form-control" placeholder=""
-                                name="pmurmur">
+                            <input type="text" id="input-murmur" class="form-control" placeholder="" name="pmurmur">
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="form-group">
                             <label class="form-control-label" for="input-jantung-lain-lain">Lain-Lain</label>
-                            <input type="text" id="input-jantung-lain-lain" class="form-control" placeholder="" name="jantung_lain_lain">
+                            <input type="text" id="input-jantung-lain-lain" class="form-control" placeholder=""
+                                name="jantung_lain_lain">
                         </div>
                     </div>
                 </div>
@@ -274,8 +270,7 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-ronki">Ronki</label>
-                            <input type="text" id="input-ronki" class="form-control" placeholder=""
-                                name="ronki">
+                            <input type="text" id="input-ronki" class="form-control" placeholder="" name="ronki">
                         </div>
                     </div>
                 </div>
@@ -283,14 +278,14 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-wheezing">Wheezing</label>
-                            <input type="text" id="input-wheezing" class="form-control" placeholder=""
-                                name="wheezing">
+                            <input type="text" id="input-wheezing" class="form-control" placeholder="" name="wheezing">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-paru-lain-lain">Lain-Lain</label>
-                            <input type="text" id="input-paru-lain-lain" class="form-control" placeholder="" name="paru_lain_lain">
+                            <input type="text" id="input-paru-lain-lain" class="form-control" placeholder=""
+                                name="paru_lain_lain">
                         </div>
                     </div>
                 </div>
@@ -301,8 +296,7 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-distensi">Distensi</label>
-                            <input type="text" id="input-distensi" class="form-control" placeholder=""
-                                name="distensi">
+                            <input type="text" id="input-distensi" class="form-control" placeholder="" name="distensi">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -324,8 +318,7 @@
                     <div class="col-lg-3">
                         <div class="form-group">
                             <label class="form-control-label" for="input-normal">Normal</label>
-                            <input type="checkbox" id="input-normal" class="form-control" placeholder=""
-                                name="normal">
+                            <input type="checkbox" id="input-normal" class="form-control" placeholder="" name="normal">
                         </div>
                     </div>
                     <div class="col-lg-3">
@@ -347,8 +340,7 @@
                     <div class="col-lg-4">
                         <div class="form-group">
                             <label class="form-control-label" for="input-asciles">Ascites</label>
-                            <input type="text" id="input-asciles" class="form-control" placeholder=""
-                                name="asciles">
+                            <input type="text" id="input-asciles" class="form-control" placeholder="" name="asciles">
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -361,8 +353,7 @@
                     <div class="col-lg-4">
                         <div class="form-group">
                             <label class="form-control-label" for="input-lokasi">Lokasi</label>
-                            <input type="text" id="input-lokasi" class="form-control" placeholder=""
-                                name="lokasi">
+                            <input type="text" id="input-lokasi" class="form-control" placeholder="" name="lokasi">
                         </div>
                     </div>
                 </div>
@@ -372,8 +363,7 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label" for="input-hepar">Hepar</label>
-                            <input type="text" id="input-hepar" class="form-control" placeholder=""
-                                name="hepar">
+                            <input type="text" id="input-hepar" class="form-control" placeholder="" name="hepar">
                         </div>
                     </div>
                 </div>
@@ -381,8 +371,7 @@
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label class="form-control-label" for="input-lien">Lien</label>
-                            <input type="text" id="input-lien" class="form-control" placeholder=""
-                                name="lien">
+                            <input type="text" id="input-lien" class="form-control" placeholder="" name="lien">
                         </div>
                     </div>
                 </div>
@@ -399,15 +388,13 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-suhu">Extremitas</label>
-                            <input type="text" id="input-suhu" class="form-control" placeholder=""
-                                name="suhu">
+                            <input type="text" id="input-suhu" class="form-control" placeholder="" name="suhu">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label class="form-control-label" for="input-edema">Edema</label>
-                            <input type="text" id="input-edema" class="form-control" placeholder=""
-                                name="edema">
+                            <input type="text" id="input-edema" class="form-control" placeholder="" name="edema">
                         </div>
                     </div>
                 </div>
@@ -424,7 +411,8 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="hasil-pemeriksaan-penunjang">Hasil Pemeriksaan Penunjang</label>
-                            <textarea class="form-control" id="hasil-pemeriksaan-penunjang" rows="3" name="hasil_pemeriksaan_penunjang"></textarea>
+                            <textarea class="form-control" id="hasil-pemeriksaan-penunjang" rows="3"
+                                name="hasil_pemeriksaan_penunjang"></textarea>
                         </div>
                     </div>
                 </div>
@@ -446,7 +434,8 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="hasil-pembedahan">Hasil Pembedahan</label>
-                            <textarea class="form-control" id="hasil-pembedahan" rows="3" name="hasil_pembedahan"></textarea>
+                            <textarea class="form-control" id="hasil-pembedahan" rows="3"
+                                name="hasil_pembedahan"></textarea>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -471,12 +460,10 @@
                     </div>
                 </div>
             </div>
-        </form>
-
-        <!-- Submit -->
-        <div class="card-header text-right">
-            <button class="btn btn-primary" type="submit" id="btn-save">Submit</button>
-        </div>
+            <!-- Submit -->
+            <div class="card-header text-right">
+                <button class="btn btn-primary" type="submit" id="btn-save">Submit</button>
+            </div>
         </form>
     </div>
 </div>
