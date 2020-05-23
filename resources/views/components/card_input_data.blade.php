@@ -80,9 +80,9 @@
                     </div>
                 </div>
 
-                <div class="card-header text-right">
+                <!--<div class="card-header text-right">
                     <button class="btn btn-primary" type="submit" id="btn-save">Submit</button>
-                </div>
+                </div>-->
         </form>
             <div class="row">
                 <div class="col-lg-3">

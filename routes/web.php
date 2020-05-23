@@ -15,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('pasien', 'FormController');
 
+Route::get('/', function(){
+    // url has been moved
+    return redirect('/pasien/create');
+});

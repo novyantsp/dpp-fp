@@ -14,10 +14,10 @@ class FormController extends Controller
      */
     public function index()
     {
-        // $formAll = FormAll::all();
-        // // dd($formAll);
-        // return view('pages.daftar_pasien', compact('formAll'));
-        return view('welcome');
+        $formAll = FormAll::all();
+        //dd($formAll);
+        return view('pages.daftar_pasien', compact('formAll'));
+        //return view('welcome');
     }
 
     /**

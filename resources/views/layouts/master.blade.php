@@ -8,7 +8,7 @@
         @yield('title', 'Final Project DPP')
     </title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ url('assets/img/icons/logo.png') }}" type="image/png">
+    <link rel="shortcut icon" href="" type="image/png">
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <!-- Icons -->
@@ -59,10 +59,10 @@
                             <div class="collapse" id="navbar-data">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
-                                        <a href="" class="nav-link">Input Data</a>
+                                        <a href="{{ url('/pasien/create') }}" class="nav-link">Input Data</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="" class="nav-link">Daftar
+                                        <a href="{{ url('/pasien') }}" class="nav-link">Daftar
                                             Pasien</a>
                                     </li>
                                 </ul>
