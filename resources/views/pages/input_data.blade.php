@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Covid-19 Admin Dashboard - Input Data')
+@section('title', 'Final Project DPP - Input Data')
 
 @section('pageContent')
 <!-- Header -->
@@ -13,7 +13,7 @@
                         <ol class="breadcrumb breadcrumb-links">
                             <li class="breadcrumb-item"><a class="text-blue" href="{{ url('/') }}"><i
                                         class="fas fa-home"></i></a></li>
-                            <li class="breadcrumb-item"><a class="text-blue" href="{{ route('pasien.input-data.show') }}">Input
+                            <li class="breadcrumb-item"><a class="text-blue" href="">Input
                                     Data</a></li>
                         </ol>
                     </nav>
@@ -28,7 +28,7 @@
     <div class="tab-content">
         <div class="row">
             <div class="col-12">
-                @component('components.card.card_input_data', ['rumahSakits' => $rumahSakits, 'pemantaus' => $pemantaus, 'userOps' => $userOps])
+                @component('components.card.card_input_data')
                 @endcomponent
             </div>
         </div>
