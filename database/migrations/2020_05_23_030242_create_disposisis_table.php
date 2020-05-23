@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDisposisiTable extends Migration
+class CreateDisposisisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateDisposisiTable extends Migration
      */
     public function up()
     {
-        Schema::create('disposisi', function (Blueprint $table) {
+        Schema::create('disposisis', function (Blueprint $table) {
             $table->id();
             $table->binary('boleh-pulang')->default('0');
             $table->dateTime('tgl-boleh-pulang');
@@ -33,6 +33,6 @@ class CreateDisposisiTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('disposisi');
+        Schema::dropIfExists('disposisis');
     }
 }

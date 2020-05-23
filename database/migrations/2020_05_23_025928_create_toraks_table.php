@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateParuTable extends Migration
+class CreateToraksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateParuTable extends Migration
      */
     public function up()
     {
-        Schema::create('paru', function (Blueprint $table) {
+        Schema::create('toraks', function (Blueprint $table) {
             $table->id();
-            $table->string('suara-nafas')->default('none');
-            $table->string('ronki')->default('none');
-            $table->string('wheezing')->default('none');
-            $table->string('lain-lain')->default('none');
+            $table->binary('simetris-asimetris')->default('0');
+            $table->string('keterangan')->default('none');
             $table->timestamps();
         });
     }
@@ -30,6 +28,6 @@ class CreateParuTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('paru');
+        Schema::dropIfExists('toraks');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAbdomenTable extends Migration
+class CreateAbdomensTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateAbdomenTable extends Migration
      */
     public function up()
     {
-        Schema::create('abdomen', function (Blueprint $table) {
+        Schema::create('abdomens', function (Blueprint $table) {
             $table->id();
             $table->binary('distensi')->default('0');
             $table->binary('meteorismus')->default('0');
@@ -32,6 +32,6 @@ class CreateAbdomenTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('abdomen');
+        Schema::dropIfExists('abdomens');
     }
 }
