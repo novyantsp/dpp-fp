@@ -1,0 +1,84 @@
+{
+    "nodes": [{
+            "id": "n1",
+            "loaded": true,
+            "title": "Pasien 1",
+            "nama": "Nama : Ahmad",
+            "usia": "Usia : 30",
+            "status": "Status : Konfirmasi",
+            "koordinat": "Koordinat : 12121212",
+            "kecamatan": "Kecamatan : Krian"
+        },
+        {
+            "id": "n2",
+            "loaded": true,
+            "title": "Pasien 2",
+            "nama": "Nama : Paijo",
+            "usia": "Usia : 30",
+            "status": "Status : ODP",
+            "koordinat": "Koordinat : 12121212",
+            "kecamatan": "Kecamatan : Jombang"
+        },
+        {
+            "id": "n3",
+            "loaded": true,
+            "title": "Pasien 3",
+            "nama": "Nama : Ruru",
+            "usia": "Usia : 30",
+            "status": "Status : ODP",
+            "koordinat": "Koordinat : 12121212",
+            "kecamatan": "Kecamatan : Gubeng"
+        },
+        {
+            "id": "n4",
+            "loaded": true,
+            "title": "Pasien 4",
+            "nama": "Nama : Joko",
+            "usia": "Usia : 30",
+            "status": "Status : ODP",
+            "koordinat": "Koordinat : 12121212",
+            "kecamatan": "Kecamatan : Mojokerto"
+        },
+        {
+            "id": "n5",
+            "loaded": true,
+            "title": "Pasien 5",
+            "nama": "Nama : Muhammad",
+            "usia": "Usia : 30",
+            "status": "Status : ODP",
+            "koordinat": "Koordinat : 12121212",
+            "kecamatan": "Kecamatan : Sukolilo"
+        }
+    ],
+    "links": [{
+            "id": "l1",
+            "from": "n1",
+            "to": "n2",
+            "hubungan":"saudara"
+        },
+        {
+            "id": "l2",
+            "from": "n2",
+            "to": "n3",
+            "hubungan":"saudara"
+        },
+        {
+            "id": "l3",
+            "from": "n3",
+            "to": "n1",
+            "hubungan":"saudara"
+        },
+        {
+            "id": "l4",
+            "from": "n3",
+            "to": "n4",
+            "hubungan":"saudara"
+        },
+        {
+            "id": "l5",
+            "from": "n1",
+            "to": "n5",
+            "hubungan":"saudara"
+        }
+    ]
+}
