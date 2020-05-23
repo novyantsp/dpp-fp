@@ -77,8 +77,8 @@
                                     <td>{{$item->no_rm}}</td>
                                     <td>{{$item->alamat}}</td>
                                     <td>
-                                        <a href="" class="btn btn-icon btn-info btn-sm"></i>Detail</a>
-                                        <a href="" class="btn btn-icon btn-warning btn-sm"></i>Edit</a>
+                                        <a href="{{ route('pasien.show',$item->id)}}" class="btn btn-icon btn-info btn-sm"></i>Detail</a>
+                                        <a href="{{ route('pasien.edit',$item->id)}}" class="btn btn-icon btn-warning btn-sm"></i>Edit</a>
                                         <button type="button" class="btn btn-icon btn-danger btn-sm hapus-pasien" data-toggle="modal"
                                             data-target="#hapus" id="hapus-pasien"></i>Hapus</button>
                                     </td>
