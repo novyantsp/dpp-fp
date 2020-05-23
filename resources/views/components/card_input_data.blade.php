@@ -424,7 +424,7 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="hasil-pemeriksaan-penunjang">Hasil Pemeriksaan Penunjang</label>
-                            <textarea class="form-control" id="hasil-pemeriksaan-penunjang" rows="3"></textarea>
+                            <textarea class="form-control" id="hasil-pemeriksaan-penunjang" rows="3" name="hasil_pemeriksaan_penunjang"></textarea>
                         </div>
                     </div>
                 </div>
@@ -432,13 +432,13 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="diagnosis">Diagnosis</label>
-                            <textarea class="form-control" id="diagnosis" rows="3"></textarea>
+                            <textarea class="form-control" id="diagnosis" rows="3" name="diagnosis"></textarea>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="terapi">Terapi</label>
-                            <textarea class="form-control" id="terapi" rows="3"></textarea>
+                            <textarea class="form-control" id="terapi" rows="3" name="terapi"></textarea>
                         </div>
                     </div>
                 </div>
@@ -446,13 +446,13 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="hasil-pembedahan">Hasil Pembedahan</label>
-                            <textarea class="form-control" id="hasil-pembedahan" rows="3"></textarea>
+                            <textarea class="form-control" id="hasil-pembedahan" rows="3" name="hasil_pembedahan"></textarea>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="disposisi">Disposisi</label>
-                            <textarea class="form-control" id="disposisi" rows="3"></textarea>
+                            <textarea class="form-control" id="disposisi" rows="3" name="disposisi"></textarea>
                         </div>
                     </div>
                 </div>
@@ -460,13 +460,13 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="rekomendasi">Rekomendasi</label>
-                            <textarea class="form-control" id="rekomendasi" rows="3"></textarea>
+                            <textarea class="form-control" id="rekomendasi" rows="3" name="saran"></textarea>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="catatan-penting">Catatan Penting</label>
-                            <textarea class="form-control" id="catatan-penting" rows="3"></textarea>
+                            <textarea class="form-control" id="catatan-penting" rows="3" name="catatan"></textarea>
                         </div>
                     </div>
                 </div>
