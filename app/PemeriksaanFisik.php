@@ -6,6 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class PemeriksaanFisik extends Model
 {
+    protected $fillable = [
+        'hepar',
+        'lien',
+        'lain_lain'
+    ];
+
     public function mata()
     {
         return $this->hasOne('App\Mata');

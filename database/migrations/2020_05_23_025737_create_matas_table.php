@@ -17,8 +17,8 @@ class CreateMatasTable extends Migration
             $table->id();
             $table->string('anemia')->default('none');
             $table->string('ikterus')->default('none');
-            $table->string('reflek-pupil')->default('none');
-            $table->string('edema-palpebrae')->default('none');
+            $table->string('reflek_pupil')->default('none');
+            $table->string('edema_palpebrae')->default('none');
             $table->timestamps();
         });
     }

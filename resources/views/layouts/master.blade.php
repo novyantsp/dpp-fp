@@ -59,10 +59,10 @@
                             <div class="collapse" id="navbar-data">
                                 <ul class="nav nav-sm flex-column">
                                     <li class="nav-item">
-                                        <a href="{{ route('pasien.input-data.show') }}" class="nav-link">Input Data</a>
+                                        <a href="" class="nav-link">Input Data</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{ route('pasien.daftar-pasien.show') }}" class="nav-link">Daftar
+                                        <a href="" class="nav-link">Daftar
                                             Pasien</a>
                                     </li>
                                 </ul>
@@ -112,12 +112,12 @@
                                 <div class="dropdown-header noti-title">
                                     <h6 class="text-overflow m-0">Selamat Datang!</h6>
                                 </div>
-                                <a href="{{ route('dashboard.user-detail.show') }}" class="dropdown-item">
+                                <a href="" class="dropdown-item">
                                     <i class="ni ni-single-02"></i>
                                     <span>Profil Saya</span>
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <form action="{{ route('logout') }}" method="get" id="logout-form">
+                                <form action="" method="get" id="logout-form">
                                     @csrf
                                 </form>
                                 <button type="submit" form="logout-form" class="dropdown-item">

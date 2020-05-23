@@ -15,10 +15,10 @@ class CreateParusTable extends Migration
     {
         Schema::create('parus', function (Blueprint $table) {
             $table->id();
-            $table->string('suara-nafas')->default('none');
+            $table->string('suara_nafas')->default('none');
             $table->string('ronki')->default('none');
             $table->string('wheezing')->default('none');
-            $table->string('lain-lain')->default('none');
+            $table->string('lain_lain')->default('none');
             $table->timestamps();
         });
     }

@@ -31,7 +31,7 @@ class CreatePemeriksaanFisiksTable extends Migration
             $table->foreign('abdomen_id')->references('id')->on('abdomens')->onDelete('cascade');
             $table->string('hepar')->default('none');
             $table->string('lien')->default('none');
-            $table->string('lain-lain')->default('none');
+            $table->string('lain_lain')->default('none');
             $table->unsignedBigInteger('extremitas_id');
             $table->foreign('extremitas_id')->references('id')->on('extrimitas')->onDelete('cascade');
             $table->timestamps();

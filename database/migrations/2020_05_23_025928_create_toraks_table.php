@@ -15,7 +15,7 @@ class CreateToraksTable extends Migration
     {
         Schema::create('toraks', function (Blueprint $table) {
             $table->id();
-            $table->binary('simetris-asimetris')->default('0');
+            $table->binary('simetris_asimetris')->default('0');
             $table->string('keterangan')->default('none');
             $table->timestamps();
         });

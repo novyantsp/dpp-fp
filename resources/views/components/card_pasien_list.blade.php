@@ -1,10 +1,10 @@
-<script>
+{{-- <script>
     var pasiens = <?php echo json_encode($pasiens) ?>;
     // var pasiens_data = JSON.parse(pasiens);
-</script>
+</script> --}}
 <div class="card">
     <div class="card-body">
-        <!--@if(session('deletePasienFailed'))
+        {{-- <!--@if(session('deletePasienFailed'))
             <br>
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-7">
@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </div>
-        @endif-->
+        @endif--> --}}
         <div class="card-body">
             <div class="table-responsive py-4">
                 <table class="table table-flush" id="datatable-basic">
@@ -43,12 +43,13 @@
                         </tr>
                     </thead>
                     <tbody class="list">
+                        @foreach($formAll as $item)
                          <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>1</td>
+                            <td>{{$item->nama}}</td>
+                            <td>{{$item->usia}}</td>
+                            <td>{{$item->no_rm}}</td>
+                            <td>{{$item->alamat}}</td>
                             <td>
                                 <a href="" class="btn btn-icon btn-info btn-sm"></i>Detail</a>
                                 <a href="" class="btn btn-icon btn-warning btn-sm"></i>Edit</a>

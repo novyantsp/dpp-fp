@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Pasien;
+use App\FormAll;
 
 class FormController extends Controller
 {
@@ -14,7 +14,9 @@ class FormController extends Controller
      */
     public function index()
     {
-        return view('pages.input_data');
+        $formAll = FormAll::all();
+        // dd($formAll);
+        return view('pages.daftar_pasien', compact('formAll'));
     }
 
     /**
@@ -36,21 +38,27 @@ class FormController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'first_name'=>'required',
-            'last_name'=>'required',
-            'email'=>'required'
+            'nama'=>'required',
+            'sex'=>'required|numeric|digits:1',
+            'no_rm'=>'required',
+            'birth'=>'required',
+            'usia'=>'required',
+            'alamat'=>'required',
+            'tgl_asesmen' => 'required'
         ]);
 
-        $pasien = new Pasien([
-            'first_name' => $request->get('first_name'),
-            'last_name' => $request->get('last_name'),
-            'email' => $request->get('email'),
-            'job_title' => $request->get('job_title'),
-            'city' => $request->get('city'),
-            'country' => $request->get('country')
+        $formAll = new FormAll([
+            'nama' => $request->get('nama'),
+            'sex' => $request->get('sex'),
+            'no_rm' => $request->get('no_rm'),
+            'birth' => $request->get('birth'),
+            'usia' => $request->get('usia'),
+            'alamat' => $request->get('alamat'),
+            'tgl_asesmen' => $request->get('tgl_asesmen')
         ]);
-        $pasien->save();
-        return redirect('/contacts')->with('success', 'Contact saved!');
+        // dd($formAll);
+        $formAll->save();
+        return redirect('/pasien')->with('success', 'Pasien saved!');
     }
 
     /**

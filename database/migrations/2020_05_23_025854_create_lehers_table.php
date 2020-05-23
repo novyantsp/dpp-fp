@@ -16,8 +16,8 @@ class CreateLehersTable extends Migration
         Schema::create('lehers', function (Blueprint $table) {
             $table->id();
             $table->string('jvp')->default('none');
-            $table->string('pembesaran-kelenjar')->default('none');
-            $table->binary('kaku-kuduk')->default('0');
+            $table->string('pembesaran_kelenjar')->default('none');
+            $table->binary('kaku_kuduk')->default('0');
             $table->timestamps();
         });
     }

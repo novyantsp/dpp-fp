@@ -28,7 +28,7 @@
     <div class="tab-content">
         <div class="row">
             <div class="col-12">
-                @component('components.card.card_input_data')
+                @component('components.card_input_data')
                 @endcomponent
             </div>
         </div>

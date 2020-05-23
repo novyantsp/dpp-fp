@@ -15,10 +15,10 @@ class CreateJantungsTable extends Migration
     {
         Schema::create('jantungs', function (Blueprint $table) {
             $table->id();
-            $table->string('s1-s2')->default('none');
+            $table->string('s1_s2')->default('none');
             $table->binary('reguler')->default('0');
             $table->string('murmur')->default('none');
-            $table->string('lain-lain')->default('none');
+            $table->string('lain_lain')->default('none');
             $table->timestamps();
         });
     }

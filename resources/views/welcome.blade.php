@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
+                    <a href="{{ route('pasien.create') }}">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://blog.laravel.com">Blog</a>
@@ -95,6 +95,44 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
+            <form method="post" action="{{ route('pasien.store') }}">
+                @csrf
+                <div class="form-group">
+                    <label for="first_name">Nama:</label>
+                    <input type="text" class="form-control" name="nama"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="last_name">no rm:</label>
+                    <input type="text" class="form-control" name="no_rm"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="last_name">Birth:</label>
+                    <input type="date" class="form-control" name="birth"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="last_name">Birth:</label>
+                    <input type="date" class="form-control" name="tgl_asesmen"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">Usia:</label>
+                    <input type="text" class="form-control" name="usia"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">sex:</label>
+                    <input type="text" class="form-control" name="sex"/>
+                </div>
+                <div class="form-group">
+                    <label for="city">alamat:</label>
+                    <input type="text" class="form-control" name="alamat"/>
+                </div>
+                <button type="submit" class="btn btn-primary-outline">Add contact</button>
+
+            </form>
         </div>
     </body>
 </html>

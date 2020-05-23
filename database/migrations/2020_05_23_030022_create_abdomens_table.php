@@ -19,7 +19,7 @@ class CreateAbdomensTable extends Migration
             $table->binary('meteorismus')->default('0');
             $table->integer('peristaltic')->default('0');
             $table->binary('asciles')->default('0');
-            $table->binary('nyeri-tekan')->default('0');
+            $table->binary('nyeri_tekan')->default('0');
             $table->string('lokasi')->default('none');
             $table->timestamps();
         });

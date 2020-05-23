@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="card-body">
-        <!--@if(session('submitFailed'))
+        @if(session('submitFailed'))
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-7">
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -29,56 +29,61 @@
                 </div>
             </div>
         </div>
-        @endif-->
-        <!--<form method="post" action="{{ route('pasien.input-data.post') }}" id="main-form">-->
-        @csrf
-        <!-- Informasi Umum -->
-        <h6 class="heading-small text-muted mb-4">Informasi Pasien</h6>
-        <div class="pl-lg-4">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="form-group">
-                        <label class="form-control-label" for="input-Nama-Pasien">Nama Pasien</label>
-                        <input type="text" id="input-Nama-Pasien" class="form-control" placeholder="" name="pasien_nama"
-                            required>
+        @endif
+        <form method="post" action="{{ route('pasien.store') }}" id="main-form">
+            @csrf
+            <!-- Informasi Umum -->
+            <h6 class="heading-small text-muted mb-4">Informasi Pasien</h6>
+            <div class="pl-lg-4">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="form-group">
+                            <label class="form-control-label" for="input-Nama-Pasien">Nama Pasien</label>
+                            <input type="text" id="input-Nama-Pasien" class="form-control" placeholder="" name="nama"
+                            >
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="form-group">
-                        <label class="form-control-label" for="input-id-Pasien">Kode RM</label>
-                        <input type="text" id="input-kode-Pasien" class="form-control" placeholder=""
-                            name="pasien_kode">
+                    <div class="col-lg-2">
+                        <div class="form-group">
+                            <label class="form-control-label" for="input-id-Pasien">Kode RM</label>
+                            <input type="text" id="input-kode-Pasien" class="form-control" placeholder=""
+                                name="no_rm">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="form-group">
-                        <label class="form-control-label" for="input-tanggal-lahir">Tanggal Lahir</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label class="form-control-label" for="input-tanggal-lahir">Tanggal Lahir</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
+                                </div>
+                                <input class="form-control datepicker" placeholder="Select date" type="text"
+                                    id="input_tgl_lahir" name="birth">
                             </div>
-                            <input class="form-control datepicker" placeholder="Select date" type="text"
-                                id="input_tgl_lahir" name="pasien_tgl_lahir">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-group">
+                            <label class="form-control-label" for="input-usia">Usia</label>
+                            <input type="number" max="1000" id="input-usia" class="form-control" placeholder=""
+                                name="usia" value="0">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2">
-                    <div class="form-group">
-                        <label class="form-control-label" for="input-usia">Usia</label>
-                        <input type="number" max="1000" id="input-usia" class="form-control" placeholder=""
-                            name="pasien_usia" value="0">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label class="form-control-label" for="input-alamat">Alamat</label>
+                            <input type="text" id="input-alamat" class="form-control" placeholder=""
+                                name="alamat">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="form-group">
-                        <label class="form-control-label" for="input-alamat">Alamat</label>
-                        <input type="text" id="input-alamat" class="form-control" placeholder=""
-                            name="pasien_alamat_lengkap">
-                    </div>
+
+                <div class="card-header text-right">
+                    <button class="btn btn-primary" type="submit" id="btn-save">Submit</button>
                 </div>
-            </div>
+        </form>
             <div class="row">
                 <div class="col-lg-3">
                     <div class="form-group">
@@ -451,7 +456,7 @@
 
         <!-- Submit -->
         <div class="card-header text-right">
-            <button class="btn btn-primary" type="submit" form="main-form" id="btn-save">Submit</button>
+            <button class="btn btn-primary" type="submit" id="btn-save">Submit</button>
         </div>
         </form>
     </div>

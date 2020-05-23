@@ -17,7 +17,7 @@ class CreateExtrimitasTable extends Migration
             $table->id();
             $table->binary('suhu')->default('0');
             $table->string('edema')->default('none');
-            $table->string('lain-lain')->default('none');
+            $table->string('lain_lain')->default('none');
             $table->timestamps();
         });
     }

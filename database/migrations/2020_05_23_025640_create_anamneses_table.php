@@ -15,9 +15,9 @@ class CreateAnamnesesTable extends Migration
     {
         Schema::create('anamneses', function (Blueprint $table) {
             $table->id();
-            $table->string('keluhan-utama')->default('none');
-            $table->string('riwayat-penyakit-sekarang')->default('none');
-            $table->string('riwayat-pengobatan')->default('none');
+            $table->string('keluhan_utama')->default('none');
+            $table->string('riwayat_penyakit_sekarang')->default('none');
+            $table->string('riwayat_pengobatan')->default('none');
             $table->timestamps();
         });
     }

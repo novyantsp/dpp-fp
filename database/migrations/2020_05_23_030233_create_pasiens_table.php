@@ -17,7 +17,9 @@ class CreatePasiensTable extends Migration
             $table->id();
             $table->string('nama');
             $table->binary('sex');
+            $table->string('no_rm');
             $table->date('birth');
+            $table->integer('usia');
             $table->string('alamat');
             $table->timestamps();
         });

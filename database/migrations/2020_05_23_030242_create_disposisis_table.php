@@ -15,13 +15,13 @@ class CreateDisposisisTable extends Migration
     {
         Schema::create('disposisis', function (Blueprint $table) {
             $table->id();
-            $table->binary('boleh-pulang')->default('0');
-            $table->dateTime('tgl-boleh-pulang');
-            $table->binary('kontrol-klinik')->default('0');
-            $table->string('keterangan-kontrol')->default('None');
-            $table->dateTime('tgl-kontrol-klinik');
-            $table->binary('dirawat-di-ruang')->default('0');
-            $table->string('keterangan-rawat')->default('None');
+            $table->binary('boleh_pulang')->default('0');
+            $table->dateTime('tgl_boleh_pulang');
+            $table->binary('kontrol_klinik')->default('0');
+            $table->string('keterangan_kontrol')->default('None');
+            $table->dateTime('tgl_kontrol_klinik');
+            $table->binary('dirawat_di_ruang')->default('0');
+            $table->string('keterangan_rawat')->default('None');
             $table->timestamps();
         });
     }
