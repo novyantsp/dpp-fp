@@ -15,19 +15,19 @@ class CreateFormsTable extends Migration
     {
         Schema::create('forms', function (Blueprint $table) {
             $table->id();
-            $table->integer('pasien_id')->unsigned();
+            $table->unsignedBigInteger('pasien_id');
             $table->foreign('pasien_id')->references('id')->on('pasien')->onDelete('cascade');
-            $table->date('tgl-asesmen')->default('none');
-            $table->integer('anamnesis_id')->unsigned();
+            $table->date('tgl-asesmen');
+            $table->unsignedBigInteger('anamnesis_id');
             $table->foreign('anamnesis_id')->references('id')->on('anamnesis')->onDelete('cascade');
-            $table->integer('pemeriksaan_fisik_id')->unsigned();
+            $table->unsignedBigInteger('pemeriksaan_fisik_id');
             $table->foreign('pemeriksaan_fisik_id')->references('id')->on('pemeriksaan_fisik')->onDelete('cascade');
             $table->string('rencana-kerja')->default('none');
             $table->string('hasil-pem-penunjang')->default('none');
             $table->string('diagnosis')->default('none');
             $table->string('terapi')->default('none');
             $table->string('hasil-pembedahan')->default('none');
-            $table->integer('disposisi_id')->unsigned();
+            $table->unsignedBigInteger('disposisi_id');
             $table->foreign('disposisi_id')->references('id')->on('disposisi')->onDelete('cascade');
             $table->string('saran')->default('none');
             $table->string('catatan')->default('none');

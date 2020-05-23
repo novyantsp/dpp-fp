@@ -16,10 +16,10 @@ class CreateDisposisiTable extends Migration
         Schema::create('disposisi', function (Blueprint $table) {
             $table->id();
             $table->binary('boleh-pulang')->default('0');
-            $table->dateTime('boleh-pulang');
+            $table->dateTime('tgl-boleh-pulang');
             $table->binary('kontrol-klinik')->default('0');
             $table->string('keterangan-kontrol')->default('None');
-            $table->dateTime('kontrol-klinik');
+            $table->dateTime('tgl-kontrol-klinik');
             $table->binary('dirawat-di-ruang')->default('0');
             $table->string('keterangan-rawat')->default('None');
             $table->timestamps();

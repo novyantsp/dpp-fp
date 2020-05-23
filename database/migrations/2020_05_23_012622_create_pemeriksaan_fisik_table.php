@@ -15,24 +15,24 @@ class CreatePemeriksaanFisikTable extends Migration
     {
         Schema::create('pemeriksaan_fisik', function (Blueprint $table) {
             $table->id();
-            $table->integer('mata_id')->unsigned();
+            $table->unsignedBigInteger('mata_id');
             $table->foreign('mata_id')->references('id')->on('mata')->onDelete('cascade');
-            $table->integer('tht_id')->unsigned();
+            $table->unsignedBigInteger('tht_id');
             $table->foreign('tht_id')->references('id')->on('tht')->onDelete('cascade');
-            $table->integer('leher_id')->unsigned();
+            $table->unsignedBigInteger('leher_id');
             $table->foreign('leher_id')->references('id')->on('leher')->onDelete('cascade');
-            $table->integer('torak_id')->unsigned();
+            $table->unsignedBigInteger('torak_id');
             $table->foreign('torak_id')->references('id')->on('torak')->onDelete('cascade');
-            $table->integer('jantung_id')->unsigned();
+            $table->unsignedBigInteger('jantung_id');
             $table->foreign('jantung_id')->references('id')->on('jantung')->onDelete('cascade');
-            $table->integer('paru_id')->unsigned();
+            $table->unsignedBigInteger('paru_id');
             $table->foreign('paru_id')->references('id')->on('paru')->onDelete('cascade');
-            $table->integer('abdomen_id')->unsigned();
+            $table->unsignedBigInteger('abdomen_id');
             $table->foreign('abdomen_id')->references('id')->on('abdomen')->onDelete('cascade');
             $table->string('hepar')->default('none');
             $table->string('lien')->default('none');
             $table->string('lain-lain')->default('none');
-            $table->integer('extremitas_id')->unsigned();
+            $table->unsignedBigInteger('extremitas_id');
             $table->foreign('extremitas_id')->references('id')->on('extrimitas')->onDelete('cascade');
             $table->timestamps();
         });
